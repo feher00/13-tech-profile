@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 
 export default function CTA() {
   return (
-    <section className="py-32 relative z-10 overflow-hidden" data-testid="section-cta">
+    <section className="py-32 relative z-10 overflow-hidden" id="contact" data-testid="section-cta">
       {/* Pulsing glow background */}
       <motion.div 
         animate={{ 
@@ -64,6 +64,7 @@ export default function CTA() {
           <button 
             className="group relative inline-flex items-center gap-4 px-10 py-5 bg-white text-black font-mono text-lg font-bold uppercase tracking-widest overflow-hidden transition-all hover:bg-primary hover:text-white"
             data-testid="button-cta-engage"
+            onClick={() => window.open('mailto:hello@13tech.com?subject=Start%20a%20Project', '_blank')}
           >
             <span className="relative z-10 flex items-center gap-3">
               Commence Build <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />

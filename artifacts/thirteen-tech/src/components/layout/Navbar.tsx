@@ -47,6 +47,7 @@ export default function Navbar() {
         <button 
           className="px-5 py-2 border border-primary text-primary text-xs font-mono uppercase tracking-widest hover:bg-primary hover:text-black transition-all"
           data-testid="button-nav-engage"
+          onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
         >
           Engage
         </button>

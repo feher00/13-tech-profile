@@ -241,6 +241,7 @@ export default function Hero() {
             <button 
               className="group relative px-8 py-4 bg-primary text-primary-foreground font-mono font-medium uppercase tracking-widest overflow-hidden transition-all hover:bg-white hover:text-black"
               data-testid="button-engage"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               <span className="relative z-10 flex items-center gap-2">
                 Engage Systems <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -249,6 +250,7 @@ export default function Hero() {
             <button 
               className="px-8 py-4 border border-border text-foreground font-mono font-medium uppercase tracking-widest hover:border-primary hover:text-primary transition-colors"
               data-testid="button-manifesto"
+              onClick={() => document.getElementById('philosophy')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Read Manifesto
             </button>

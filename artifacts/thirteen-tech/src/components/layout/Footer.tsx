@@ -13,9 +13,9 @@ export default function Footer() {
         </div>
 
         <div className="flex items-center gap-6 text-xs font-mono text-muted-foreground uppercase tracking-widest">
-          <a href="#" className="hover:text-primary transition-colors">Privacy</a>
-          <a href="#" className="hover:text-primary transition-colors">Terms</a>
-          <a href="#" className="hover:text-primary transition-colors">Security Specs</a>
+          <a href="mailto:legal@13tech.com?subject=Privacy%20Policy" className="hover:text-primary transition-colors">Privacy</a>
+          <a href="mailto:legal@13tech.com?subject=Terms%20of%20Service" className="hover:text-primary transition-colors">Terms</a>
+          <a href="mailto:hello@13tech.com?subject=Security%20Specs" className="hover:text-primary transition-colors">Security Specs</a>
         </div>
 
 

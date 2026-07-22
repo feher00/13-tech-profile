@@ -4,6 +4,7 @@ export default function Philosophy() {
   return (
     <section 
       className="relative z-10 bg-black text-white" 
+      id="philosophy"
       data-testid="section-philosophy"
     >
       {/* Chapter 1: Transformation and Innovation */}
