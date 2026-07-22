@@ -2,6 +2,9 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Toaster } from '@/components/ui/toaster';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import NotFound from '@/pages/not-found';
+import Privacy from './pages/privacy';
+import Terms from './pages/terms';
+import Security from './pages/security';
 import { Route, Switch, Router as WouterRouter } from 'wouter';
 
 import Navbar from './components/layout/Navbar';
@@ -39,6 +42,9 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/privacy" component={Privacy} />
+      <Route path="/terms" component={Terms} />
+      <Route path="/security" component={Security} />
       <Route component={NotFound} />
     </Switch>
   );
