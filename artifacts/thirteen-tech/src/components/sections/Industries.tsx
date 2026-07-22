@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Activity, Shield, Cpu, Zap, Box, Network } from 'lucide-react';
+import { Activity, Shield, Zap, Box, Network } from 'lucide-react';
 import saasImg from '@assets/generated_images/industry_saas.jpg';
 import fintechImg from '@assets/generated_images/industry_fintech.jpg';
 import adtechImg from '@assets/generated_images/industry_adtech.jpg';
@@ -70,10 +70,10 @@ export default function Industries() {
           {industries.map((ind, i) => (
             <motion.div
               key={ind.id}
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: i * 0.15, ease: "easeOut" }}
+              viewport={{ once: true, margin: "-50px" }}
               className="group relative h-[400px] overflow-hidden bg-secondary/20"
               data-testid={`card-industry-${ind.id}`}
             >

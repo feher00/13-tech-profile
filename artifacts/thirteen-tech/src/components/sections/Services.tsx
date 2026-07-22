@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Layers, Workflow, Database, Cpu, Cloud } from 'lucide-react';
+import { Layers, Workflow, Database, Cloud } from 'lucide-react';
 
 const capabilities = [
   {
@@ -55,10 +55,10 @@ export default function Services() {
           {capabilities.map((cap, i) => (
             <motion.div
               key={cap.id}
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              viewport={{ once: true }}
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: i * 0.15, ease: "easeOut" }}
+              viewport={{ once: true, margin: "-50px" }}
               className="bg-background p-12 group hover:bg-secondary/20 transition-colors"
               data-testid={`card-service-${cap.id}`}
             >

@@ -9,6 +9,7 @@ import Footer from './components/layout/Footer';
 import Hero from './components/sections/Hero';
 import Clients from './components/sections/Clients';
 import Philosophy from './components/sections/Philosophy';
+import GlobeConnections from './components/sections/GlobeConnections';
 import Services from './components/sections/Services';
 import Industries from './components/sections/Industries';
 import Stats from './components/sections/Stats';
@@ -25,6 +26,7 @@ function Home() {
         <Hero />
         <Clients />
         <Philosophy />
+        <GlobeConnections />
         <Services />
         <Industries />
         <Stats />
