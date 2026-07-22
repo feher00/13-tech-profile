@@ -47,8 +47,8 @@ export default function Logo({ className = "" }: { className?: string }) {
     <div className={`flex items-center gap-3 ${className}`} data-testid="logo-full">
       <LogoMark size={32} />
       <div className="flex flex-col justify-center translate-y-[1px]">
-        <span className="font-display font-bold text-xl leading-none tracking-tight text-white uppercase">
-          13<span className="text-[#00f0ff]">Tech</span>
+        <span className="font-display font-bold text-xl leading-none tracking-[0.18em] text-white uppercase">
+          Tech
         </span>
       </div>
     </div>
