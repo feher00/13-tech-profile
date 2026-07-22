@@ -92,14 +92,12 @@ export default function Industries() {
                 <div className="mb-4 text-primary opacity-50 group-hover:opacity-100 transition-opacity">
                   <ind.icon className="w-8 h-8" />
                 </div>
-                <h3 className="text-2xl font-display font-bold mb-2 group-hover:text-primary transition-colors">
+                <h3 className="text-2xl font-display font-bold mb-3 group-hover:text-primary transition-colors duration-300">
                   {ind.name}
                 </h3>
-                <div className="h-0 opacity-0 group-hover:h-auto group-hover:opacity-100 transition-all duration-500 overflow-hidden">
-                  <p className="text-sm text-muted-foreground mt-2 font-light">
-                    {ind.description}
-                  </p>
-                </div>
+                <p className="text-sm text-muted-foreground font-light leading-relaxed translate-y-1 group-hover:translate-y-0 group-hover:text-white/80 transition-all duration-500">
+                  {ind.description}
+                </p>
               </div>
               
               {/* Borders */}
