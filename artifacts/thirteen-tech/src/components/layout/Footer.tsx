@@ -1,5 +1,3 @@
-import { Terminal } from 'lucide-react';
-
 export default function Footer() {
   return (
     <footer className="bg-black py-12 border-t border-border" data-testid="footer">
@@ -20,10 +18,6 @@ export default function Footer() {
           <a href="#" className="hover:text-primary transition-colors">Security Specs</a>
         </div>
 
-        <div className="flex items-center gap-2 text-primary font-mono text-xs uppercase tracking-widest">
-          <Terminal className="w-4 h-4" />
-          <span>v.13.0.0</span>
-        </div>
 
       </div>
     </footer>
