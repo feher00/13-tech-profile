@@ -95,7 +95,7 @@ export default function Security() {
             <p className="text-muted-foreground font-light leading-relaxed max-w-2xl">
               13 Tech operates at the intersection of precision engineering and adversarial threat modeling. Below are the technical controls, standards, and postures we enforce across all internal systems and client-facing infrastructure.
             </p>
-            <p className="text-sm font-mono text-muted-foreground mt-6">Last Reviewed: July 2025 &nbsp;·&nbsp; Classification: Public</p>
+            <p className="text-sm font-mono text-muted-foreground mt-6">Last Reviewed: July 2026 &nbsp;·&nbsp; Classification: Public</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-border/30 border border-border/30">

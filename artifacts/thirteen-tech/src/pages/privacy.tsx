@@ -21,7 +21,7 @@ export default function Privacy() {
           <div className="mb-12 border-b border-border/50 pb-10">
             <p className="text-xs font-mono text-primary uppercase tracking-widest mb-4">Legal</p>
             <h1 className="text-5xl font-display font-bold text-white mb-4" data-testid="text-privacy-heading">Privacy Policy</h1>
-            <p className="text-sm font-mono text-muted-foreground">Effective Date: January 1, 2025 &nbsp;·&nbsp; Last Updated: July 1, 2025</p>
+            <p className="text-sm font-mono text-muted-foreground">Effective Date: July 1, 2026 &nbsp;·&nbsp; Last Updated: July 22, 2026</p>
           </div>
 
           <div className="prose prose-invert prose-sm max-w-none space-y-10 text-muted-foreground font-light leading-relaxed">
