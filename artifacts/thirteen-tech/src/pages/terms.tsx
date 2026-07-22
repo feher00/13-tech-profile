@@ -82,7 +82,7 @@ export default function Terms() {
 
             <section>
               <h2 className="text-xl font-display font-bold text-white mb-3">10. Contact</h2>
-              <p>For legal inquiries: <a href="mailto:legal@13tech.com" className="text-primary hover:underline">legal@13tech.com</a></p>
+              <p>For legal inquiries: <a href="mailto:legal@the13tech.com" className="text-primary hover:underline">legal@the13tech.com</a></p>
             </section>
 
           </div>

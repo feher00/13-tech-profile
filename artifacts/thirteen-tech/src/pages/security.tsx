@@ -129,10 +129,10 @@ export default function Security() {
               To report a vulnerability, request our full security audit reports, or discuss security requirements for your engagement, contact our security team directly.
             </p>
             <a
-              href="mailto:security@13tech.com?subject=Security%20Inquiry"
+              href="mailto:security@the13tech.com?subject=Security%20Inquiry"
               className="inline-flex items-center gap-2 text-sm font-mono text-primary hover:underline uppercase tracking-widest"
             >
-              security@13tech.com
+              security@the13tech.com
             </a>
           </div>
 

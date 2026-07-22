@@ -74,7 +74,7 @@ export default function Privacy() {
 
             <section>
               <h2 className="text-xl font-display font-bold text-white mb-3">7. Your Rights</h2>
-              <p>Depending on your jurisdiction, you may have the right to access, correct, delete, or port your personal data. To exercise these rights, contact us at <a href="mailto:legal@13tech.com" className="text-primary hover:underline">legal@13tech.com</a>. We will respond within 30 days.</p>
+              <p>Depending on your jurisdiction, you may have the right to access, correct, delete, or port your personal data. To exercise these rights, contact us at <a href="mailto:legal@the13tech.com" className="text-primary hover:underline">legal@the13tech.com</a>. We will respond within 30 days.</p>
             </section>
 
             <section>
@@ -84,7 +84,7 @@ export default function Privacy() {
 
             <section>
               <h2 className="text-xl font-display font-bold text-white mb-3">9. Contact</h2>
-              <p>For privacy-related inquiries: <a href="mailto:legal@13tech.com" className="text-primary hover:underline">legal@13tech.com</a></p>
+              <p>For privacy-related inquiries: <a href="mailto:legal@the13tech.com" className="text-primary hover:underline">legal@the13tech.com</a></p>
             </section>
 
           </div>

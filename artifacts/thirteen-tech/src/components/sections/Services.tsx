@@ -48,7 +48,7 @@ export default function Services() {
           </div>
           <button
             className="flex-shrink-0 px-6 py-3 border border-border text-sm font-mono uppercase tracking-widest hover:border-primary hover:text-primary transition-colors"
-            onClick={() => window.open('mailto:hello@13tech.com?subject=Tech%20Stack%20Inquiry', '_blank')}
+            onClick={() => window.open('mailto:hello@the13tech.com?subject=Tech%20Stack%20Inquiry', '_blank')}
           >
             View Tech Stack
           </button>
