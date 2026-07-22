@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, useScroll } from 'framer-motion';
+import Logo from '../ui/Logo';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -25,13 +26,8 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center gap-2 group cursor-pointer" data-testid="nav-logo">
-          <div className="w-8 h-8 bg-white text-black flex items-center justify-center font-display font-bold text-xl group-hover:bg-primary group-hover:text-white transition-colors">
-            13
-          </div>
-          <span className="font-mono text-lg tracking-widest font-bold text-white uppercase hidden sm:block">
-            Tech LLC
-          </span>
+        <div className="flex items-center group cursor-pointer" data-testid="nav-logo">
+          <Logo className="w-[130px] group-hover:scale-105 transition-transform duration-300" />
         </div>
 
         {/* Navigation */}
