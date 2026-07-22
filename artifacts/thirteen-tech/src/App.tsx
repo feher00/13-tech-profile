@@ -7,7 +7,6 @@ import { Route, Switch, Router as WouterRouter } from 'wouter';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Hero from './components/sections/Hero';
-import Clients from './components/sections/Clients';
 import Philosophy from './components/sections/Philosophy';
 import GlobeConnections from './components/sections/GlobeConnections';
 import Services from './components/sections/Services';
@@ -24,7 +23,6 @@ function Home() {
       <Navbar />
       <main className="flex-1">
         <Hero />
-        <Clients />
         <Philosophy />
         <GlobeConnections />
         <Services />
