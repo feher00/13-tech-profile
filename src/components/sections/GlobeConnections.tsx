@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from 'react';
-import { motion, useInView } from 'framer-motion';
+import { useEffect, useRef } from 'react';
+import { motion } from 'framer-motion';
 
 const CITIES = [
   { lat: 37.7749, lng: -122.4194, role: 'Developer' },
@@ -23,48 +23,6 @@ const CITIES = [
   { lat: 37.5665, lng: 126.9780, role: 'Developer' },
   { lat: -33.9249, lng: 18.4241, role: 'HealthTech' },
 ];
-
-function AnimatedCounter({ value, label }: { value: string, label: string }) {
-  const ref = useRef<HTMLDivElement>(null);
-  const inView = useInView(ref, { once: true, margin: "-50px" });
-  const [count, setCount] = useState(0);
-  
-  const numMatch = value.match(/[\d]+/);
-  const target = numMatch ? parseInt(numMatch[0], 10) : 0;
-  const suffix = value.replace(/[\d]+/, '');
-
-  useEffect(() => {
-    if (!inView || target === 0) return;
-    
-    let startTime: number;
-    const duration = 2000;
-    
-    const animate = (time: number) => {
-      if (!startTime) startTime = time;
-      const progress = Math.min((time - startTime) / duration, 1);
-      const easeProgress = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
-      
-      setCount(Math.floor(easeProgress * target));
-      
-      if (progress < 1) {
-        requestAnimationFrame(animate);
-      }
-    };
-    
-    requestAnimationFrame(animate);
-  }, [inView, target]);
-
-  return (
-    <div ref={ref} className="text-center" data-testid={`counter-${label.toLowerCase().replace(/\s+/g, '-')}`}>
-      <div className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-2 tracking-tighter">
-        {count}{suffix}
-      </div>
-      <div className="text-xs md:text-sm font-mono text-primary uppercase tracking-widest">
-        {label}
-      </div>
-    </div>
-  );
-}
 
 export default function GlobeConnections() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -259,15 +217,9 @@ export default function GlobeConnections() {
             A Network <br/>
             <span className="text-primary">Without Borders</span>
           </h2>
-          <p className="text-xl text-muted-foreground font-light mb-16">
+          <p className="text-xl text-muted-foreground font-light">
             We connect the builders, the backers, and the visionaries — engineering the future from every corner of the earth.
           </p>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 pt-12 border-t border-border/50">
-            <AnimatedCounter value="40+" label="Countries" />
-            <AnimatedCounter value="500+" label="Developers" />
-            <AnimatedCounter value="200+" label="Clients" />
-          </div>
         </motion.div>
       </div>
     </section>

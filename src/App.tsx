@@ -14,7 +14,6 @@ import Philosophy from './components/sections/Philosophy';
 import GlobeConnections from './components/sections/GlobeConnections';
 import Services from './components/sections/Services';
 import Industries from './components/sections/Industries';
-import Stats from './components/sections/Stats';
 import CTA from './components/sections/CTA';
 
 const queryClient = new QueryClient();
@@ -30,7 +29,6 @@ function Home() {
         <GlobeConnections />
         <Services />
         <Industries />
-        <Stats />
         <CTA />
       </main>
       <Footer />
